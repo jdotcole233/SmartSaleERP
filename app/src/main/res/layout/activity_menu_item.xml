@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    tools:context=".MenuItem"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+         <ImageView
+             android:id="@+id/foodimage"
+             android:layout_width="match_parent"
+             android:layout_height="100dp"
+             android:src="@drawable/burger"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/foodname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Banku"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    />
+                <TextView
+                    android:id="@+id/fooddetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1/2 cup of rice1/2"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-condensed"
+                    />
+                <TextView
+                    android:id="@+id/foodprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GHC 2.30"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-condensed-light"
+                    />
+                <ImageButton
+                    android:id="@+id/addfoodtoselection"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="Add"
+                    android:background="@drawable/more_button_background"
+                    android:textColor="#fff"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_add_black_24dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/removefromselection"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="Remove"
+                    android:background="@drawable/more_button_background"
+                    android:textColor="#fff"
+                    android:src="@drawable/ic_remove_circle_outline_black_24dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

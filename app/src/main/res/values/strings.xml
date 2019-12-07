@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SmartSale</string>
+    <string-array name="schools">
+        <item>Select School</item>
+        <item>Ghana International School</item>
+        <item>British International School</item>
+        <item>Akosombo International School</item>
+        <item>Galaxy International School</item>
+        <item>NorthHill International School</item>
+    </string-array>
+    <string-array name="paymentmethod">
+        <item>Payment method</item>
+        <item>Express pay</item>
+        <item>Ecobank pay</item>
+        <item>Mobile Money</item>
+    </string-array>
+</resources>

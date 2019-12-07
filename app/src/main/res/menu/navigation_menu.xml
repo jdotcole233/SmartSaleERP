@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/smartsaledashboard"
+           android:title="Dashboard"
+           android:icon="@drawable/ic_dashboard_black_24dp"
+            />
+    <item android:id="@+id/smartsalemessages"
+        android:title="Messages"
+        android:icon="@drawable/ic_email_black_24dp"
+        />
+    <item android:id="@+id/smartsaleorders"
+        android:title="Order"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+
+        />
+    <item android:id="@+id/smartsaletopup"
+        android:title="Top up"
+        android:icon="@drawable/ic_monetization_on_black_24dp"
+        />
+
+    <group
+            android:menuCategory="container"
+            android:checkableBehavior="single"
+        >
+        <item android:id="@+id/smartsalestting"
+            android:title="setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            />
+    </group>
+
+</menu>
