@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.smartsale.Models.MessageModel;
@@ -45,7 +46,7 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.Messag
 
     public static  class MessageViewHolder extends RecyclerView.ViewHolder {
         private TextView sender, time, messageContent;
-        private Button more;
+        private ImageButton more;
 
         public MessageViewHolder(View itemView) {
             super(itemView);

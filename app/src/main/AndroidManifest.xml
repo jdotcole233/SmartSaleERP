@@ -12,20 +12,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuItem"></activity>
-        <activity android:name=".OrderMeal">
+        <activity android:name=".OrderDetails"></activity>
+        <activity android:name=".MenuItem" />
+        <activity
+            android:name=".OrderMeal"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TopUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainMessage"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Messages" />
+        <activity
+            android:name=".smartsale_dashborad"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TopUp"></activity>
-        <activity android:name=".MainMessage" />
-        <activity android:name=".Messages" />
-        <activity android:name=".smartsale_dashborad" />
-        <activity android:name=".ValidateCredentials" />
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".ValidateCredentials"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
