@@ -12,6 +12,7 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 
 import com.example.smartsale.Adapters.MenuAdapter;
@@ -29,6 +30,7 @@ public class OrderMeal extends AppCompatActivity implements NavigationView.OnNav
     private ImageButton imageButton;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
+    private LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,7 @@ public class OrderMeal extends AppCompatActivity implements NavigationView.OnNav
         imageButton = findViewById(R.id.ordermealnavigationbtn);
         drawerLayout = findViewById(R.id.ordermealdrawer);
         navigationView = findViewById(R.id.navigationView);
+        linearLayout = findViewById(R.id.ordercheckout);
 
         menus = new ArrayList<>();
         recyclerView = findViewById(R.id.foodgridlist);
@@ -62,6 +65,13 @@ public class OrderMeal extends AppCompatActivity implements NavigationView.OnNav
             public void onClick(View v) {
                 drawerLayout.openDrawer(Gravity.LEFT);
                 navigationView.setNavigationItemSelectedListener(OrderMeal.this);
+            }
+        });
+
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(OrderMeal.this, OrderDetails.class));
             }
         });
     }
