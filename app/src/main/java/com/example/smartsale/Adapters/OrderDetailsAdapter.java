@@ -22,14 +22,13 @@ public class OrderDetailsAdapter  extends RecyclerView.Adapter<OrderDetailsAdapt
         this.context = context;
     }
 
-    @NonNull
     @Override
     public OrderDetailsAdapterHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         return new OrderDetailsAdapterHolder(LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.order_items, viewGroup, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull OrderDetailsAdapterHolder orderDetailsAdapterHolder, int i) {
+    public void onBindViewHolder(OrderDetailsAdapterHolder orderDetailsAdapterHolder, int i) {
 
 
     }
