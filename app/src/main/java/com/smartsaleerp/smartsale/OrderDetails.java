@@ -1,4 +1,4 @@
-package com.example.smartsale;
+package com.smartsaleerp.smartsale;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,9 +8,8 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.smartsale.Adapters.MessagesAdapter;
-import com.example.smartsale.Adapters.OrderDetailsAdapter;
-import com.example.smartsale.Models.MenuModel;
+import com.smartsaleerp.smartsale.Adapters.OrderDetailsAdapter;
+import com.smartsaleerp.smartsale.Models.MenuModel;
 
 import java.util.ArrayList;
 import java.util.List;

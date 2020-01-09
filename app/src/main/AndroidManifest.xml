@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.example.smartsale">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smartsaleerp.smartsale"
+
+    >
 
     <dist:module dist:instant="true" />
 
@@ -11,36 +14,39 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".OrderDetails"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name="com.smartsaleerp.smartsale.OrderDetails"
                 android:theme="@style/OrderDetailsTheme"
             ></activity>
-        <activity android:name=".MenuItem" />
+        <activity android:name="com.smartsaleerp.smartsale.MenuItem" />
         <activity
-            android:name=".OrderMeal"
+            android:name="com.smartsaleerp.smartsale.OrderMeal"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".TopUp"
+            android:name="com.smartsaleerp.smartsale.TopUp"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainMessage"
+            android:name="com.smartsaleerp.smartsale.MainMessage"
             android:screenOrientation="portrait" />
-        <activity android:name=".Messages" />
+        <activity android:name="com.smartsaleerp.smartsale.Messages" />
         <activity
-            android:name=".smartsale_dashborad"
+            android:name="com.smartsaleerp.smartsale.smartsale_dashborad"
             android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.smartsaleerp.smartsale.ValidateCredentials"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.smartsaleerp.smartsale.MainActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ValidateCredentials"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

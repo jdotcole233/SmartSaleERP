@@ -1,4 +1,4 @@
-package com.example.smartsale;
+package com.smartsaleerp.smartsale;
 
 import org.junit.Test;
 

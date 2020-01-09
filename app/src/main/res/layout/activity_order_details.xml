@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".OrderDetails"
+    tools:context="com.smartsaleerp.smartsale.OrderDetails"
     app:cardCornerRadius="5dp"
     app:cardBackgroundColor="#ff5f52"
     >

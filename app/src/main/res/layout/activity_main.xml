@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.smartsaleerp.smartsale.MainActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="13sp"
+        android:textSize="12sp"
         android:text="from"
         android:gravity="center"
         android:layout_above="@+id/companyname"
@@ -35,7 +35,7 @@
         android:padding="5dp"
         android:text="Hartet Technologies"
         android:textColor="#f00"
-        android:textSize="17sp"
+        android:textSize="13sp"
         app:fontFamily="sans-serif-smallcaps" />
 
 </RelativeLayout>

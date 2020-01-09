@@ -1,4 +1,4 @@
-package com.example.smartsale.Adapters;
+package com.smartsaleerp.smartsale.Adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,8 +9,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.smartsale.Models.MenuModel;
-import com.example.smartsale.R;
+import com.smartsaleerp.smartsale.Models.MenuModel;
+import com.smartsaleerp.smartsale.R;
 
 import java.util.List;
 

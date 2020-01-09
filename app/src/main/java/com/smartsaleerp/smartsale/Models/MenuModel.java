@@ -1,4 +1,4 @@
-package com.example.smartsale.Models;
+package com.smartsaleerp.smartsale.Models;
 
 public class MenuModel {
     private  String foodname, image, foodDetails;

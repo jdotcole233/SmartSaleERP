@@ -1,8 +1,7 @@
-package com.example.smartsale;
+package com.smartsaleerp.smartsale;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -13,35 +12,33 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-
-import com.example.smartsale.Adapters.MessagesAdapter;
-import com.example.smartsale.Models.MessageModel;
+import com.smartsaleerp.smartsale.Adapters.MessagesAdapter;
+import com.smartsaleerp.smartsale.Models.MessageModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class smartsale_dashborad extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainMessage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private RecyclerView recyclerView;
-    private  RecyclerView.LayoutManager layoutManager;
-    private List<MessageModel> messages;
+    private RecyclerView.LayoutManager layoutManager;
+    private  List<MessageModel> messages;
     private MessagesAdapter messagesAdapter;
-    private ImageButton imageButton;
+    private NavigationView navigationView;
     private DrawerLayout drawerLayout;
-    private  NavigationView navigationView;
+    private ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_smartsale_dashborad);
-
-        recyclerView = findViewById(R.id.messagelist);
-        imageButton = findViewById(R.id.dashboardnavigationbtn);
-        drawerLayout = findViewById(R.id.dashboarddrawer);
-        navigationView = findViewById(R.id.dashboardNavigationView);
-
+        setContentView(R.layout.activity_main_message);
+        recyclerView = findViewById(R.id.mainmessagelist);
+        imageButton = findViewById(R.id.messagenavigationbtn);
+        drawerLayout = findViewById(R.id.messagedrawer);
+        navigationView = findViewById(R.id.messageNavigationView);
 
         messages = new ArrayList<>();
+
         recyclerView.setHasFixedSize(true);
 
         layoutManager = new LinearLayoutManager(this);
@@ -54,6 +51,7 @@ public class smartsale_dashborad extends AppCompatActivity implements Navigation
         messages.add(new MessageModel("Hello Sir, Your child needs food", "11:30 am", "Harold Okai"));
         messages.add(new MessageModel("Hello Sir, Your child needs food", "11:30 am", "Harold Okai"));
 
+
         messagesAdapter = new MessagesAdapter(messages, this);
         recyclerView.setAdapter(messagesAdapter);
 
@@ -61,11 +59,9 @@ public class smartsale_dashborad extends AppCompatActivity implements Navigation
             @Override
             public void onClick(View v) {
                 drawerLayout.openDrawer(Gravity.LEFT);
-                navigationView.setNavigationItemSelectedListener(smartsale_dashborad.this);
-
+                navigationView.setNavigationItemSelectedListener(MainMessage.this);
             }
         });
-
 
     }
 
@@ -73,19 +69,19 @@ public class smartsale_dashborad extends AppCompatActivity implements Navigation
     public boolean onNavigationItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.smartsaledashboard:
-                startActivity(new Intent(smartsale_dashborad.this, smartsale_dashborad.class));
+                startActivity(new Intent(MainMessage.this, smartsale_dashborad.class));
                 finish();
                 break;
             case R.id.smartsalemessages:
-                startActivity(new Intent(smartsale_dashborad.this, MainMessage.class));
+                startActivity(new Intent(MainMessage.this, MainMessage.class));
                 finish();
                 break;
             case R.id.smartsaleorders:
-                startActivity(new Intent(smartsale_dashborad.this, OrderMeal.class));
+                startActivity(new Intent(MainMessage.this, OrderMeal.class));
                 finish();
                 break;
             case R.id.smartsaletopup:
-                startActivity(new Intent(smartsale_dashborad.this, TopUp.class));
+                startActivity(new Intent(MainMessage.this, TopUp.class));
                 finish();
                 break;
             case R.id.smartsalestting:

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="15dp"
-    tools:context=".MenuItem"
+    tools:context="com.smartsaleerp.smartsale.MenuItem"
     android:layout_marginBottom="5dp"
     android:layout_marginRight="5dp"
     >

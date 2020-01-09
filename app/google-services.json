@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "449368741657",
+    "firebase_url": "https://sserp-ais.firebaseio.com",
+    "project_id": "sserp-ais",
+    "storage_bucket": "sserp-ais.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449368741657:android:76897a9f4b3a1207795788",
+        "android_client_info": {
+          "package_name": "com.smartsaleerp.smartsale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449368741657-ir6dgb7d30jhf0fc3imfc9id94smpri1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartsaleerp.smartsale",
+            "certificate_hash": "a05a2aa4fdfe9a78970fc24fc8a20a42fc0d11de"
+          }
+        },
+        {
+          "client_id": "449368741657-qakr4trkortln9q6pfnpcnrhe3b76b9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTPdf-jcBFuQbpj89NA0yRTiAoh_UZuQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449368741657-qakr4trkortln9q6pfnpcnrhe3b76b9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,4 @@
-package com.example.smartsale.Models;
+package com.smartsaleerp.smartsale.Models;
 
 public class MessageModel {
     private String message, time, sendername;
