@@ -2,6 +2,7 @@
     <string name="app_name">SmartSale</string>
     <string-array name="schools">
         <item>Select School</item>
+        <item>Association International School</item>
         <item>Ghana International School</item>
         <item>British International School</item>
         <item>Akosombo International School</item>

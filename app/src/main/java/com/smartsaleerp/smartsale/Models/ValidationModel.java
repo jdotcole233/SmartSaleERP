@@ -11,6 +11,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.smartsaleerp.smartsale.Miscellaneous.SmartSaleUtility;
 import com.smartsaleerp.smartsale.ValidateCredentials;
 
 import java.util.HashMap;
@@ -21,10 +22,12 @@ public class ValidationModel {
     boolean client_exists = false;
     private HashMap<String, String> client_details;
     Context context;
+    SmartSaleUtility smartSaleUtility;
 
 
     public ValidationModel(Context context) {
         this.context = context;
+        smartSaleUtility = new SmartSaleUtility(context);
         this.client_details = new HashMap<>();
     }
 
@@ -33,7 +36,7 @@ public class ValidationModel {
     }
 
 
-    public boolean validateUserAccount(String school_name, String phone_number, String client_id, final Intent intent){
+    public boolean validateUserAccount(String school_name, String phone_number, String client_id, final Intent intent, final Boolean remeberdevice){
         databaseConnection(school_name).child("clients").child(phone_number).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -41,6 +44,14 @@ public class ValidationModel {
                     client_exists = true;
                     client_details = populateMap(dataSnapshot);
                     intent.putExtra("infor", client_details);
+
+                        if (remeberdevice){
+                            Boolean bool = smartSaleUtility.saveUserData("SAVED_DATA", client_details);
+                            Log.i("SmartSalae", bool + " saving ");
+                        } else {
+                            Log.i("SmartSalae",  remeberdevice + " saving ");
+                        }
+
                     context.startActivity(intent);
                     ((ValidateCredentials)context).finish();
                     Log.i("SmartSale", client_details.get("parent name"));

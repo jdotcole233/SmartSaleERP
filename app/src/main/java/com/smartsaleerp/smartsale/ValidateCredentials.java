@@ -39,6 +39,7 @@ public class ValidateCredentials extends AppCompatActivity {
         clientID = findViewById(R.id.client_id);
         validateButton = findViewById(R.id.validate_button);
         rememberDevice = findViewById(R.id.rememberdevice);
+        isRememberDeviceCheck = false;
 
         validationModel = new ValidationModel(this);
 
@@ -73,7 +74,7 @@ public class ValidateCredentials extends AppCompatActivity {
                 String phonenumber = parentPhoneNumber.getText().toString();
                 String clientIdentifactionNumber = clientID.getText().toString();
                 Intent validateCredentialsIntent = new Intent(ValidateCredentials.this, smartsale_dashborad.class);
-               validationModel.validateUserAccount(schoolSelected, phonenumber, clientIdentifactionNumber, validateCredentialsIntent);
+               validationModel.validateUserAccount(schoolSelected, phonenumber, clientIdentifactionNumber, validateCredentialsIntent, isRememberDeviceCheck);
             }
         });
 
